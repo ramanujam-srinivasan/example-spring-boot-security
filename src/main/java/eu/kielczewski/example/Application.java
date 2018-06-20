@@ -12,12 +12,13 @@ Comment added
 public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        System.out.println("In Main Method of Spring");
+		SpringApplication.run(Application.class, args);
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        System.out.println("In Configure Method");
+        System.out.println("In  Method Deleted");
 		return application.sources(Application.class);
     }
 
